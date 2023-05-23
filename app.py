@@ -44,7 +44,7 @@ model3 = os.getenv("MODEL_3")
 app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return model3
+    return "helloworld"
 @app.route('/chatbot', methods=['GET','POST'])
 def chatbot():
     if request.method == 'POST':
