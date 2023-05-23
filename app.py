@@ -4,7 +4,7 @@ from flask import Flask,request,jsonify
 from dotenv import load_dotenv
 
 # Set up OpenAI API credentials
-load_dotenv("D:\Skripsi\Code\model\.env")
+load_dotenv("./.env")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 # # fine-tune = "ft-m9nqicBkFK8Cc25fpe8vUl9T"
 model = os.getenv("MODEL_1")
